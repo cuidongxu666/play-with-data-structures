@@ -1,5 +1,5 @@
 from chapter_03_Stack_Queue.base import StackBase
-from chapter_03_LinkedList.linkedlist import LinkedList
+from chapter_04_LinkedList.linkedlist import LinkedList
 
 class LinkedListStack(StackBase):
     def __init__(self):
@@ -26,7 +26,7 @@ class LinkedListStack(StackBase):
         while curr:
             data.append(str(curr.e))
             curr = curr.next
-        return '<chapter_03_LinkedList.linkedlist_stack.LinkedListStack>: (Top) ' + ' -> '.join(data)
+        return '<chapter_04_LinkedList.linkedlist_stack.LinkedListStack>: (Top) ' + ' -> '.join(data)
 
     def __repr__(self):
         return self.__str__()
